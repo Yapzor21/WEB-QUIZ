@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    
+    <style>
+        .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    max-width: 800px;
+    position: absolute;
+    top: 60%;
+    left: 56%;
+    transform: translate(-50%, -50%);
+    column-gap: 20px;
+    row-gap: 20px;
+ margin-bottom: 0%  ;
+ margin-top: 3.5vh;
+
+    
+  }
+
+  .names{
+    border: 1px black solid;
+    height: 30vh;
+    border-radius: 40px;
+    width: 400px;
+    background-color:  rgb(0, 153, 255);
+  }
+
+  
+
+
+  
+
+  
+  .background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url('/images/0813.mp4'); /* Replace with your image path */
+    background-size: cover;
+    z-index: -1; /* Place background behind the grid */
+  }
+
+
+  body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+
+audio {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+}
+
+
+.box-model {
+    margin-top: 5vh;
+    width: 60%; 
+    padding: 15px;
+    border: 6px solid #ccc;
+    height: 13vh;
+    background-color: #000647;
+    position: absolute; 
+    left: 50%;
+    transform: translateX(-50%); 
+    margin-bottom: 0%;
+}
+
+
+.box-model span {
+
+  font-size: 38px;
+  font-family: bold;
+  color: #ccc;
+  }
+
+
+  .btn {
+    width: 150px;
+    background: linear-gradient(to right, #f8f8f87d, #f0efef74); 
+    border-radius: 12px; 
+    padding: 14px 28px;
+    font-size: 25px;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    font-family: 'MyCustomFont', sans-serif; 
+    transition: background 0.3s ease, transform 0.3s ease; 
+    bottom: 1px;
+    text-decoration: none;
+    
+}
+
+.nice{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.btn:hover {
+    background: linear-gradient(to right, #ff8c00, #faab00); /* Reverse gradient on hover */
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+  
+
+  
+
+</style>
+
+    </style>
+</head>
+
+<body>
+
+    <div class="box-model">
+        <span>What can you catch but not throw?</span>
+      </div>
+      
+
+    <div class="grid-container">
+        <div class="grid-item">
+            <form action="">
+   <input type="text" class="names">
+        </form>
+        </div>
+    </div>
+
+    <div class="background">
+        <video autoplay muted loop class="background-video">
+            <source src="/images/0813.mp4" type="video/mp4">
+        </video>
+
+        <audio id="myAudio" controls loop>
+            <source src="/images/audio.mp3" type="audio/mpeg">
+        </audio>
+        
+    </div>
+
+   <div class="nice">
+    <a href="q8.html" class="btn">NEXT QUESTION</a>
+   </div>  
+</body>
+
+</html>
+ 

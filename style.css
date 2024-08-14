@@ -1,0 +1,48 @@
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url('/images/04B_30__.TTF') format('truetype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+.background {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.btn {
+    position: relative;
+    background: linear-gradient(to right, #f8f8f87d, #f0efef74); 
+    border: none;
+    border-radius: 12px;
+    padding: 14px 28px;
+    font-size: 25px;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    font-family: 'MyCustomFont', sans-serif; 
+    text-transform: uppercase; 
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+    background: linear-gradient(to right, #ff8c00, #faab00); 
+    transform: scale(1.05); 
+}

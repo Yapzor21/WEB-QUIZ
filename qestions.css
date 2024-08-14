@@ -1,0 +1,111 @@
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    max-width: 800px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    column-gap: 20px;
+    row-gap: 20px;
+    height: 320px; 
+    border: 15px solid #fff;
+    background-color: #f0f0f0; 
+ margin-bottom: 0%  ;
+    
+  }
+  
+
+
+  .grid-item {
+    background-color: rgb(0, 153, 255);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+  
+  .background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url('/images/0813.mp4'); /* Replace with your image path */
+    background-size: cover;
+    z-index: -1; /* Place background behind the grid */
+  }
+
+
+  body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+
+audio {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+}
+
+
+.box-model {
+    margin-top: 5vh;
+    width: 60%; 
+    padding: 15px;
+    border: 6px solid #ccc;
+    height: 13vh;
+    background-color: #000647;
+    position: absolute; 
+    left: 50%;
+    transform: translateX(-50%); 
+    margin-bottom: 0%;
+}
+
+
+.box-model span {
+
+  font-size: 38px;
+  font-family: bold;
+  color: #ccc;
+  }
+
+
+  .btn {
+    width: 150px;
+    background: linear-gradient(to right, #f8f8f87d, #f0efef74); 
+    border-radius: 12px; 
+    padding: 14px 28px;
+    font-size: 25px;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    font-family: 'MyCustomFont', sans-serif; 
+    transition: background 0.3s ease, transform 0.3s ease; 
+    bottom: 1px;
+    text-decoration: none;
+    
+}
+
+.nice{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.btn:hover {
+    background: linear-gradient(to right, #ff8c00, #faab00); /* Reverse gradient on hover */
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+  
+
+  
